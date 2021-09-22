@@ -1,11 +1,13 @@
 export enum CardKind {
-    addition = "Addition Problems",
-    subtraction = "Subtraction Problems"
+    Addition = "Addition Problems",
+    Subtraction = "Subtraction Problems",
+    Multiplication = "Multiplication Problems",
+    Division = "Division Problems"
 }
 
 export interface Card {
-    ID: number
-    kind: CardKind
-    mathProblem: number
-    correctAnswer: number
+    ID: number;
+    Kind: CardKind;
+    MathProblem: string;
+    CorrectAnswer: string;
 }

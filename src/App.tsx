@@ -1,17 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CARDS from './assets/cards.json'
-import { Flashcard } from './components/Flashcard';
-import { NewCard } from './components/NewCard'
+import { CardViewer } from './components/CardViewer';
+import { ControlPanel } from './components/ControlPanel'
 import { Container, Row } from 'react-bootstrap'
+import { Card } from './interfaces/card';
 
 function App(): JSX.Element {
+  const [activeCard, setActiveCard] = useState<Card>(CARDS[0] as Card);
   return (
     <Container className="App">
       <Row>
-      <Flashcard></Flashcard>
-      <NewCard></NewCard>
+      <CardViewer></CardViewer>
+      <ControlPanel></ControlPanel>
       </Row>
       </Container>
   );
