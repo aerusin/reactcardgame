@@ -1,14 +1,38 @@
 [
     {
     "ID": 1,
-    "Kind": "Addition",
-    "MathProblem": "5 + 5",
-    "Answer": "5"
+    "kind": "Addition",
+    "question": "5 + 5",
+    "answer": "5"
     },
     {
-        "ID": 2,
-        "Kind": "Addition",
-        "MathProblem": "5 + 5",
-        "Answer": "5"
-        }
+    "ID": 2,
+    "kind": "Addition",
+    "question": "5 + 5",
+    "answer": "5"
+    },
+    {
+    "ID": 1,
+    "kind": "Subtraction",
+    "question": "5 + 5",
+    "answer": "5"
+    },
+    {
+    "ID": 2,
+    "kind": "Subtraction",
+    "question": "5 + 5",
+    "answer": "5"
+    },
+    {
+    "ID": 1,
+    "kind": "Subtraction",
+    "question": "5 + 5",
+    "answer": "5"
+    },
+    {
+    "ID": 2,
+    "kind": "Muliplication",
+    "question": "5 + 5",
+    "answer": "5"
+    }
 ]

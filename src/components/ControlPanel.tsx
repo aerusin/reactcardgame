@@ -12,3 +12,4 @@ export function ControlPanel({setCard}: {setCard: (c: Card)=>void}): JSX.Element
     }>New Card</Button>
     </Col>
 }
+
