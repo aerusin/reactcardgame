@@ -3,7 +3,6 @@ import { Card } from '../interfaces/card';
 import CARDS from '../assets/cards.json'
 import { getRandomElement } from '../utilities/data';
 
-
 export function ControlPanel({setCard}: {setCard: (c: Card)=>void}): JSX.Element {
     return <Col>
     <h1>Control Panel</h1>

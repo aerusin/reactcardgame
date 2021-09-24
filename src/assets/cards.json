@@ -2,35 +2,36 @@
     {
     "ID": 1,
     "kind": "Addition",
-    "question": "5 + 5",
+    "question": 
+    "5 + 5",
     "answer": "5"
     },
     {
     "ID": 2,
     "kind": "Addition",
-    "question": "5 + 5",
+    "question": "5 - 5",
     "answer": "5"
     },
     {
-    "ID": 1,
+    "ID": 3,
     "kind": "Subtraction",
     "question": "5 + 5",
     "answer": "5"
     },
     {
-    "ID": 2,
+    "ID": 4,
     "kind": "Subtraction",
     "question": "5 + 5",
     "answer": "5"
     },
     {
-    "ID": 1,
+    "ID": 5,
     "kind": "Subtraction",
     "question": "5 + 5",
     "answer": "5"
     },
     {
-    "ID": 2,
+    "ID": 6,
     "kind": "Muliplication",
     "question": "5 + 5",
     "answer": "5"
