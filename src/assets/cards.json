@@ -4,36 +4,36 @@
     "kind": "Addition",
     "question": 
     "5 + 5",
-    "answer": "5"
+    "hint": "10"
     },
     {
     "ID": 2,
     "kind": "Addition",
-    "question": "5 - 5",
-    "answer": "5"
+    "question": "17 + 4",
+    "hint": "21"
     },
     {
     "ID": 3,
     "kind": "Subtraction",
-    "question": "5 + 5",
-    "answer": "5"
+    "question": "10 - 2",
+    "hint": "8"
     },
     {
     "ID": 4,
     "kind": "Subtraction",
-    "question": "5 + 5",
-    "answer": "5"
+    "question": "14 - 7",
+    "hint": "7"
     },
     {
     "ID": 5,
-    "kind": "Subtraction",
-    "question": "5 + 5",
-    "answer": "5"
+    "kind": "Multiplication",
+    "question": "6 x 6",
+    "hint": "36"
     },
     {
     "ID": 6,
-    "kind": "Muliplication",
-    "question": "5 + 5",
-    "answer": "5"
+    "kind": "Division",
+    "question": "8 / 4",
+    "hint": "2"
     }
 ]

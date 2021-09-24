@@ -3,12 +3,13 @@ import { Card } from '../interfaces/card';
 import CARDS from '../assets/cards.json'
 import { getRandomElement } from '../utilities/data';
 
-export function ControlPanel({setCard}: {setCard: (c: Card)=>void}): JSX.Element {
+export function ControlPanel({setCard, reveal, hintRevealed}: {setCard: (c: Card)=>void, reveal: (r: boolean)=>void, hintRevealed: boolean}): JSX.Element {
+    function setRandomCard() {
+        setCard(getRandomElement(CARDS as Card[]))
+    }
     return <Col>
-    <h1>Control Panel</h1>
-    <Button onClick={
-        () => setCard(getRandomElement(CARDS as Card[]))
-    }>New Card</Button>
+    <Button onClick={setRandomCard}>Enter</Button>
+    <Button onClick={() => reveal(!hintRevealed)}> int</Button>
     </Col>
 }
 

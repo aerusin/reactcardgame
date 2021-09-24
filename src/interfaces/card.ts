@@ -11,5 +11,5 @@ export interface Card {
     ID: number;
     kind: CardKind;
     question: string;
-    answer: string;
+    hint: string;
 }
