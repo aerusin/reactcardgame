@@ -9,20 +9,22 @@ import { Card } from './interfaces/card';
 
 function App(): JSX.Element {
   const [activeCard, setActiveCard] = useState<Card>(CARDS[0] as Card);
-  const [cardKindAddition, setCardKindAddition] = useState<boolean>(false);
-  const [cardKindSubtraction, setCardSubtraction] = useState<boolean>(false);
-  const [cardKindMultiplication, setCardKindMultiplication] = useState<boolean>(false);
-  const [cardKindDivision, setCardKindDivision] = useState<boolean>(false);
+  const [cardKindAdd, setCardAdd] = useState<boolean>(false);
+  const [cardKindSub, setCardSub] = useState<boolean>(false);
+  const [cardKindMul, setCardMul] = useState<boolean>(false);
+  const [cardKindDiv, setCardDiv] = useState<boolean>(false);
   const [hintRevealed, reveal] = useState<boolean>(false);
+  const [answer, setAnswer] =useState<string>("");
+  const [expected, setExpected] =useState<string>("");
+  
+
   return (
     <Container className="App">
       <Row>
       <DisplayCard card={activeCard} hintRevealed={false}></DisplayCard>
-      <ControlPanel setCard={setActiveCard} hintRevealed={hintRevealed} reveal={function (r: boolean): void {
-          throw new Error('Function not implemented.');
-        } }></ControlPanel>
+      <ControlPanel setCard={setActiveCard} reveal={reveal} hintRevealed={false} ></ControlPanel> 
       </Row>
-      </Container> 
+      </Container>  
   );
 }
 
