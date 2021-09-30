@@ -3,31 +3,31 @@ import { Card } from '../interfaces/card';
 import CARDS from '../assets/cards.json'
 import { getRandomElement } from '../utilities/data';
 
-export function ControlPanel({setCard, reveal, hintRevealed}: {setCard: (c: Card)=>void, 
-        reveal: (r: boolean)=>void, hintRevealed: boolean}): JSX.Element {
+export function ControlPanel({setCard}: {setCard: (c: Card)=>void}): JSX.Element {
     
     function setRandomCard() {
+        setCard(getRandomElement(CARDS as Card[]))
+        //setCard(getRandomElement((CARDS as Card[]).filter((card: Card) => card.kind === "Addition Problems")))
+    }
+    function setCardAdd(){
         setCard(getRandomElement((CARDS as Card[]).filter((card: Card) => card.kind === "Addition Problems")))
     }
-
-    function makeShouter(name: string) {
-        return function() {
-            console.log(name);
-        }
+    function setCardSub(){
+        setCard(getRandomElement((CARDS as Card[]).filter((card: Card) => card.kind === "Subtraction Problems")))
     }
-    
-    console.log(makeShouter)
-    console.log(makeShouter("Dr. Bart"));
-    let newFunction = makeShouter("Dr. Bart");
-    newFunction()
-    console.log(makeShouter("Dr. Bart")());
-
-
+    function setCardMul(){
+        setCard(getRandomElement((CARDS as Card[]).filter((card: Card) => card.kind === "Multiplication Problems")))
+    }
+    function setCardDiv(){
+        setCard(getRandomElement((CARDS as Card[]).filter((card: Card) => card.kind === "Division Problems")))
+    }
     return <Col>
     <Button onClick={setRandomCard}>Enter</Button>
-    <Button onClick={() => reveal(!hintRevealed)}> Hint</Button>
-
-
+    <Button onClick={setCardAdd}>+</Button>
+    <Button onClick={setCardSub}>-</Button>
+    <Button onClick={setCardMul}>*</Button>
+    <Button onClick={setCardDiv}>÷</Button>
     </Col>
+    
 }
 
