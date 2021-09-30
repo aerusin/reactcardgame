@@ -7,7 +7,6 @@ export function ControlPanel({setCard}: {setCard: (c: Card)=>void}): JSX.Element
     
     function setRandomCard() {
         setCard(getRandomElement(CARDS as Card[]))
-        //setCard(getRandomElement((CARDS as Card[]).filter((card: Card) => card.kind === "Addition Problems")))
     }
     function setCardAdd(){
         setCard(getRandomElement((CARDS as Card[]).filter((card: Card) => card.kind === "Addition Problems")))
@@ -22,7 +21,7 @@ export function ControlPanel({setCard}: {setCard: (c: Card)=>void}): JSX.Element
         setCard(getRandomElement((CARDS as Card[]).filter((card: Card) => card.kind === "Division Problems")))
     }
     return <Col>
-    <Button onClick={setRandomCard}>Enter</Button>
+    <Button onClick={setRandomCard}>Random</Button>
     <Button onClick={setCardAdd}>+</Button>
     <Button onClick={setCardSub}>-</Button>
     <Button onClick={setCardMul}>*</Button>

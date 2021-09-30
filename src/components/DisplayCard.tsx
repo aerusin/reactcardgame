@@ -5,23 +5,25 @@ import { useState } from 'react';
 import { isConstructorDeclaration, isGetAccessor } from 'typescript';
 import { getRandomElement } from '../utilities/data';
 import CARDS from '../assets/cards.json'
+import { clear } from 'console';
 
 
 
 export function DisplayCard({card, setCard}: {card: Card, setCard: (c: Card)=>void}): JSX.Element {
-
+    const [searchText, setSearchText] = useState("")
     function handleKeyPress(event: React.KeyboardEvent) {
         console.log((event.target as HTMLInputElement).value);
-        let a = (event.target as HTMLInputElement).value;
-            if(event.key === 'Enter'){
-            if(a === card.hint){
+        let studentAnswer = (event.target as HTMLInputElement).value;
+        if(event.key === 'Enter'){
+            if(studentAnswer === card.hint){
                 alert("Correct!")
                 setCard(getRandomElement(CARDS as Card[]))
-
+                setSearchText("")
             }else{
                 alert("Incorrect, Try Again!")
+                setSearchText("")
             }
-         }
+        }
     }
     return <Col>
     <BootstrapCard>
@@ -32,7 +34,8 @@ export function DisplayCard({card, setCard}: {card: Card, setCard: (c: Card)=>vo
                 </div> 
             <Form.Group controlId="answer-entry">
             <Form.Label><strong>Enter Correct Answer:</strong></Form.Label>
-            <Form.Control as="textarea" rows={2} onKeyPress = {handleKeyPress} />
+            <Form.Control as="input" value = {searchText} onKeyPress = {handleKeyPress}
+                onChange = {(e) => setSearchText(e.target.value)}/>
             </Form.Group>
             </BootstrapCard.Text>
         </BootstrapCard.Body>

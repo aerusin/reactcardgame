@@ -12,8 +12,12 @@ function App(): JSX.Element {
   const [cardKind, setCardKind] = useState<string>("addition");
   const [answer, setAnswer] =useState<string>("");
   const [expected, setExpected] =useState<string>("");
-  const [counter, setCounter] =React.useState(60);  
-  
+  //const [counter, setCounter] =React.useState(60); 
+ 
+ // React.useEffect(() => {
+   // counter > 0 && setTimeout(() => setCounter(counter - 1), 1000);
+ // }, [counter]);
+    
 
   return (
     <Container className="App">
