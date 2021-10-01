@@ -28,10 +28,11 @@ export function DisplayCard({card, setCard, cardKind}: {card: Card, setCard: (c:
         }
     }
     return <Col>
-    <BootstrapCard color = "primary">
+    <h3> Flashcard Math Quiz </h3>
+    <BootstrapCard>
         <BootstrapCard.Body>
             <BootstrapCard.Text>
-                <strong>Math Problem</strong>:
+                <strong>Math Question</strong>:
                 <div> {card.question}
                 </div> 
             <Form.Group controlId="answer-entry">
