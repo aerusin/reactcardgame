@@ -1,12 +1,16 @@
 import { Button, Col } from 'react-bootstrap';
-import { Card } from '../interfaces/card';
+import { Card, CardKind } from '../interfaces/card';
 import CARDS from '../assets/cards.json'
 import { getRandomElement } from '../utilities/data';
+import { CardKindSelector } from './CardKindSelector';
 
-export function ControlPanel({setCard}: {setCard: (c: Card)=>void}): JSX.Element {
+export function ControlPanel({setCard, cardKind, setCardKind}: {setCard: (c: Card)=>void, cardKind: CardKind, setCardKind: (c: CardKind)=>void}): JSX.Element {
     
     function setRandomCard() {
         setCard(getRandomElement(CARDS as Card[]))
+    }
+    function cardChange() {
+        setCard(getRandomElement((CARDS as Card[]).filter((card: Card) => card.kind === cardKind)))
     }
     function setCardAdd(){
         setCard(getRandomElement((CARDS as Card[]).filter((card: Card) => card.kind === "Addition Problems")))
@@ -20,12 +24,11 @@ export function ControlPanel({setCard}: {setCard: (c: Card)=>void}): JSX.Element
     function setCardDiv(){
         setCard(getRandomElement((CARDS as Card[]).filter((card: Card) => card.kind === "Division Problems")))
     }
+    console.log(cardKind)
+    //setCard(getRandomElement((CARDS as Card[]).filter((card: Card) => card.kind === cardKind)))
     return <Col>
     <Button onClick={setRandomCard}>Random</Button>
-    <Button onClick={setCardAdd}>+</Button>
-    <Button onClick={setCardSub}>-</Button>
-    <Button onClick={setCardMul}>*</Button>
-    <Button onClick={setCardDiv}>÷</Button>
+    <CardKindSelector cardKind = {cardKind} setCardKind = {setCardKind}></CardKindSelector>
     </Col>
     
 }

@@ -6,10 +6,10 @@ import { DisplayCard } from './components/DisplayCard';
 import { ControlPanel } from './components/ControlPanel'
 //import { Timer } from './components/Timer'
 import { Container, Row } from 'react-bootstrap'
-import { Card } from './interfaces/card';
+import { Card, CardKind } from './interfaces/card';
 function App(): JSX.Element {
   const [activeCard, setActiveCard] = useState<Card>(CARDS[0] as Card);
-  const [cardKind, setCardKind] = useState<string>("addition");
+  const [cardKind, setCardKind] = useState<CardKind>(CardKind.Addition);
   const [answer, setAnswer] =useState<string>("");
   const [expected, setExpected] =useState<string>("");
   //const [counter, setCounter] =React.useState(60); 
@@ -22,10 +22,10 @@ function App(): JSX.Element {
   return (
     <Container className="App">
       <Row>
-      <DisplayCard card={activeCard} setCard={setActiveCard}></DisplayCard>
+      <DisplayCard card={activeCard} setCard={setActiveCard} cardKind={cardKind}></DisplayCard>
       </Row>
       <Row>
-      <ControlPanel setCard={setActiveCard} ></ControlPanel> 
+      <ControlPanel setCard={setActiveCard} cardKind={cardKind} setCardKind={setCardKind} ></ControlPanel> 
       </Row>
       </Container>  
   );
