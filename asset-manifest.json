@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.390a0f8c.chunk.css",
-    "main.js": "/static/js/main.fe5b494c.chunk.js",
-    "main.js.map": "/static/js/main.fe5b494c.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.972caeed.js",
-    "runtime-main.js.map": "/static/js/runtime-main.972caeed.js.map",
-    "static/css/2.818011ed.chunk.css": "/static/css/2.818011ed.chunk.css",
-    "static/js/2.9adf2127.chunk.js": "/static/js/2.9adf2127.chunk.js",
-    "static/js/2.9adf2127.chunk.js.map": "/static/js/2.9adf2127.chunk.js.map",
-    "static/js/3.0f0039e2.chunk.js": "/static/js/3.0f0039e2.chunk.js",
-    "static/js/3.0f0039e2.chunk.js.map": "/static/js/3.0f0039e2.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/2.818011ed.chunk.css.map": "/static/css/2.818011ed.chunk.css.map",
-    "static/css/main.390a0f8c.chunk.css.map": "/static/css/main.390a0f8c.chunk.css.map",
-    "static/js/2.9adf2127.chunk.js.LICENSE.txt": "/static/js/2.9adf2127.chunk.js.LICENSE.txt"
+    "main.css": "/reactcardgame/static/css/main.0b8f99d8.chunk.css",
+    "main.js": "/reactcardgame/static/js/main.7adf2107.chunk.js",
+    "main.js.map": "/reactcardgame/static/js/main.7adf2107.chunk.js.map",
+    "runtime-main.js": "/reactcardgame/static/js/runtime-main.61a775b4.js",
+    "runtime-main.js.map": "/reactcardgame/static/js/runtime-main.61a775b4.js.map",
+    "static/css/2.818011ed.chunk.css": "/reactcardgame/static/css/2.818011ed.chunk.css",
+    "static/js/2.13ab398e.chunk.js": "/reactcardgame/static/js/2.13ab398e.chunk.js",
+    "static/js/2.13ab398e.chunk.js.map": "/reactcardgame/static/js/2.13ab398e.chunk.js.map",
+    "static/js/3.6d27f230.chunk.js": "/reactcardgame/static/js/3.6d27f230.chunk.js",
+    "static/js/3.6d27f230.chunk.js.map": "/reactcardgame/static/js/3.6d27f230.chunk.js.map",
+    "index.html": "/reactcardgame/index.html",
+    "static/css/2.818011ed.chunk.css.map": "/reactcardgame/static/css/2.818011ed.chunk.css.map",
+    "static/css/main.0b8f99d8.chunk.css.map": "/reactcardgame/static/css/main.0b8f99d8.chunk.css.map",
+    "static/js/2.13ab398e.chunk.js.LICENSE.txt": "/reactcardgame/static/js/2.13ab398e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.972caeed.js",
+    "static/js/runtime-main.61a775b4.js",
     "static/css/2.818011ed.chunk.css",
-    "static/js/2.9adf2127.chunk.js",
-    "static/css/main.390a0f8c.chunk.css",
-    "static/js/main.fe5b494c.chunk.js"
+    "static/js/2.13ab398e.chunk.js",
+    "static/css/main.0b8f99d8.chunk.css",
+    "static/js/main.7adf2107.chunk.js"
   ]
 }
