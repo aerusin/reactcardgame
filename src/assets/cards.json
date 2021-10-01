@@ -1,38 +1,50 @@
 [
     {
     "ID": 1,
-    "kind": "Addition",
+    "kind": "Addition Problems",
     "question": "5 + 5",
     "hint": "10"
     },
     {
     "ID": 2,
-    "kind": "Addition",
+    "kind": "Addition Problems",
     "question": "17 + 4",
     "hint": "21"
     },
     {
     "ID": 3,
-    "kind": "Subtraction",
+    "kind": "Subtraction Problems",
     "question": "10 - 2",
     "hint": "8"
     },
     {
     "ID": 4,
-    "kind": "Subtraction",
+    "kind": "Subtraction Problems",
     "question": "14 - 7",
     "hint": "7"
     },
     {
     "ID": 5,
-    "kind": "Multiplication",
+    "kind": "Multiplication Problems",
     "question": "6 x 6",
     "hint": "36"
     },
     {
     "ID": 6,
-    "kind": "Division",
+    "kind": "Division Problems",
     "question": "8 / 4",
     "hint": "2"
-    }
+    },
+    {
+    "ID": 7,
+    "kind": "Division Problems",
+    "question": "16 / 2",
+    "hint": "8"
+    },
+    {
+    "ID": 8,
+    "kind": "Addition Problems",
+    "question": "14 + 3",
+    "hint": "17"
+    }   
 ]

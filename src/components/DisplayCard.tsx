@@ -13,12 +13,13 @@ export function DisplayCard({card, setCard, cardKind}: {card: Card, setCard: (c:
     const [searchText, setSearchText] = useState("")
     function handleKeyPress(event: React.KeyboardEvent) {
         console.log(card.kind)
+        console.log(cardKind)
         console.log((event.target as HTMLInputElement).value);
         let studentAnswer = (event.target as HTMLInputElement).value;
         if(event.key === 'Enter'){
             if(studentAnswer === card.hint){
                 alert("Correct!");
-                setCard(getRandomElement((CARDS as Card[])));
+                setCard(getRandomElement((CARDS as Card[]).filter((card: Card) => card.kind === cardKind)))
                 setSearchText("");
             }else{
                 alert("Incorrect, Try Again!")
@@ -27,7 +28,7 @@ export function DisplayCard({card, setCard, cardKind}: {card: Card, setCard: (c:
         }
     }
     return <Col>
-    <BootstrapCard>
+    <BootstrapCard color = "primary">
         <BootstrapCard.Body>
             <BootstrapCard.Text>
                 <strong>Math Problem</strong>:
